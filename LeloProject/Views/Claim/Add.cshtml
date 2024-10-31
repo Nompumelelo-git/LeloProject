@@ -1,0 +1,59 @@
+﻿@model Claim
+@{
+    ViewData["Title"] = "Claim";
+}
+
+
+
+<form asp-action="Index" method="post" role="form">
+
+    <div class="form-group row">
+        <label asp-for="Sessions" class="col-md-2 col-form-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Sessions" class="form-control" />
+            <span asp-validation-for="Sessions" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="HoursWorked" class="col-md-2 col-form-label"></label>
+        <div class="col-md-5">
+            <input asp-for="HoursWorked" class="form-control" />
+            <span asp-validation-for="HoursWorked" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="HourlyRate" class="col-md-2 col-form-label"></label>
+        <div class="col-md-5">
+            <input asp-for="HourlyRate" class="form-control" />
+            <span asp-validation-for="HourlyRate" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label asp-for="HoursWorked" class="col-md-2 col-form-label"></label>
+        <div class="col-md-5">
+            <input asp-for="HoursWorked" class="form-control" />
+            <span asp-validation-for="HoursWorked" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Programmes" class="col-md-2 col-form-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Programmes" class="form-control" />
+            <span asp-validation-for="Programmes" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="">
+        <button class="btn btn-primary">
+            Add Claim
+        </button>
+
+
+    </div>
+
+</form>
